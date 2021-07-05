@@ -19,7 +19,8 @@ class PageController extends Controller
 //        dd($user_count,$pending_count,$complete_count,$orders);
         return view('admin.dashboard.index',compact('user_count','pending_count','complete_count','orders'));
     }
-    public function alluser(){
+    public function alluser()
+    {
         $user = User::latest()->withCount('order')-> paginate(10);
         return view('admin.user.index',compact('user'));
     }

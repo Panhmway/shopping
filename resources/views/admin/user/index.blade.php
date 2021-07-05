@@ -7,14 +7,14 @@
         </div>
         <div class="card_body">
             <table class="table table-striped">
-                <thread>
+                <thead>
                     <tr>
                         <th>Name</th>
                         <th>Emial</th>
                         <th>Image</th>
                         <th>Order Count</th>
                     </tr>
-                </thread>
+                </thead>
                 <tbody>
                 @foreach($user as $u)
                     <tr>
